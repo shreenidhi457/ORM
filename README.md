@@ -19,15 +19,14 @@ Clone the problem from GitHub
 Create a new app in Django project
 
 ### STEP 3:
-Enter the code for admin.py 
-
+admin.py 
+~~~~
 from django.contrib import admin
 from .models import amazon_DB,amazon_DBAdmin
 admin.site.register(amazon_DB,amazon_DBAdmin)
 
-
 models.py
-
+~~~~
 from django.db import models 
 from django.contrib import admin
 class amazon_DB (models.Model):
