@@ -19,14 +19,22 @@ Clone the problem from GitHub
 Create a new app in Django project
 
 ### STEP 3:
-admin.py 
+Enter the code of admin.py and models.py
+
+
+### STEP 4:
+Execute Django admin and create details for 10 books
+
+## PROGRAM
 ~~~~
+admin.py 
+
 from django.contrib import admin
 from .models import amazon_DB,amazon_DBAdmin
 admin.site.register(amazon_DB,amazon_DBAdmin)
 
 models.py
-~~~~
+
 from django.db import models 
 from django.contrib import admin
 class amazon_DB (models.Model):
@@ -38,19 +46,14 @@ class amazon_DB (models.Model):
 class amazon_DBAdmin(admin.ModelAdmin):
      list_display=["Product_name","S_no","Product_type","Price","Year"]
 
+~~~~
 
-
-### STEP 4:
-Execute Django admin and create details for 10 books
-
-## PROGRAM
-
-![shree](https://github.com/user-attachments/assets/5aae350e-948d-498b-9b24-fd542f08c81b)
 
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![shree](https://github.com/user-attachments/assets/5aae350e-948d-498b-9b24-fd542f08c81b)
+
 ![shree 1](https://github.com/user-attachments/assets/d66ce8db-5ff4-44d6-8dd7-4726534b78b1)
 
 
